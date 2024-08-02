@@ -17,6 +17,7 @@ body {
     width: 400px;
     background-color: #3FAF82;
     position: relative;
+    border-radius: 2px;
 }
 
 .center {

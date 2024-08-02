@@ -6,20 +6,20 @@
 }
 
 body {
-    background: linear-gradient(45deg,#433CA0,#4DC0C8);
     height: 100vh;
     width: 100vw;
-    font-family: monospace;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #challenge {
-    height: 500px;
-    width: 500px;
+    background: linear-gradient(45deg,#433CA0,#4DC0C8);
+    height: 400px;
+    width: 400px;
     display: flex;
     position: relative;
+    border-radius: 2px;
 }
 
 #challenge > div {
