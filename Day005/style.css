@@ -142,24 +142,28 @@ body {
     height: 40px;
     margin: 00px 20px 0px 20px;
     position: relative;
+    border: 1px dashed rgba(0, 0, 0, 0.425);
 }
 
 .lines-blue {
     height: 40px;
     margin: 0px 20px;
     position: relative;
+    border: 1px dashed rgba(0, 0, 0, 0.425);
 }
 
 .lines-red > div {
     position: absolute;
     height: 2px;
-    width: 50px;
+    width: 47px;
+    transform-origin: left center;
 }
 
 .lines-blue > div {
     position: absolute;
     height: 2px;
-    width: 50px;
+    width: 45px;
+    transform-origin: left center;
 }
 
 .line-red::before {
@@ -202,6 +206,60 @@ body {
     position: absolute;
     top: -80%;
     right: 0;
+}
+
+.lines-red > .line1-red {
+    width: 60px;
+    bottom: -7px;
+    rotate: -40deg;
+}
+
+.lines-red > .line2-red {
+    width: 46px;
+    top: 6px;
+    left: 41px;
+    rotate: 15deg;
+}
+
+.lines-blue > .line1-blue {
+    width: 46px;
+    top: 50%;
+    rotate: -14deg;
+}
+
+.lines-blue > .line2-blue {
+    width: 50px;
+    left: 39px;
+    top: 7px;
+    rotate: 20deg;
+}
+
+.lines-blue > .line3-blue {
+    width: 48px;
+    left: 80px;
+    top: 23px;
+    rotate: -12deg;
+}
+
+.lines-blue > .line4-blue {
+    width: 45px;
+    left: 121px;
+    top: 14px;
+    rotate: 8deg;
+}
+
+.lines-blue > .line5-blue {
+    width: 45px;
+    left: 160px;
+    top: 19px;
+    rotate: 18deg;
+}
+
+.lines-blue > .line6-blue {
+    width: 45px;
+    left: 197px;
+    top: 32px;
+    rotate: -12deg;
 }
 
 .days {
