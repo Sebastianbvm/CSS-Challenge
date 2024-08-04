@@ -221,6 +221,20 @@ body {
     rotate: 15deg;
 }
 
+.lines-red > .line3-red {
+    width: 50px;
+    top: 18px;
+    left: 80px;
+    rotate: -18deg;
+}
+
+.lines-red > .line4-red {
+    width: 46px;
+    top: 3px;
+    left: 119px;
+    rotate: 35deg;
+}
+
 .lines-blue > .line1-blue {
     width: 46px;
     top: 50%;
