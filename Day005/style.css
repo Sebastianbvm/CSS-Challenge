@@ -141,14 +141,15 @@ body {
     height: 40px;
     margin: 00px 20px 0px 20px;
     position: relative;
-    border: 1px dashed rgba(0, 0, 0, 0.425);
+    border-top: 1px solid rgba(0, 0, 0, 0.120);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.120);
 }
 
 .lines-blue {
     height: 40px;
     margin: 0px 20px;
     position: relative;
-    border: 1px dashed rgba(0, 0, 0, 0.425);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.120);
 }
 
 .lines-red > div {
@@ -158,6 +159,90 @@ body {
     transform-origin: left center;
 }
 
+div.points-red {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+}
+
+div.tooltip-red {
+    height: 20px;
+    width: 30px;
+    border-radius: 3px;
+    background-color: #FA7373;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-left: 3px;
+    padding-right: 3px;
+    opacity: 0;
+    top: -15px;
+    left: -12px;
+    transition: all .5s ease-out;
+    cursor: pointer;
+}
+
+div.tooltip-red:hover {
+    opacity: 1;
+    top: -25px;
+}
+
+div.tooltip-red::after {
+    content: '';
+    height: 6px;
+    width: 6px;
+    background-color: #FA7373;
+    position: absolute;
+    bottom: -3px;
+    rotate: 45deg;
+}
+
+div.tooltip-blue {
+    height: 20px;
+    width: 30px;
+    border-radius: 3px;
+    background-color: #7BA2FF;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-left: 3px;
+    padding-right: 3px;
+    opacity: 0;
+    top: -15px;
+    left: -12px;
+    transition: all .5s ease-out;
+    cursor: pointer;
+}
+
+div.tooltip-blue:hover {
+    opacity: 1;
+    top: -25px;
+}
+
+div.tooltip-blue::after {
+    content: '';
+    height: 6px;
+    width: 6px;
+    background-color: #7BA2FF;
+    position: absolute;
+    bottom: -3px;
+    rotate: 45deg;
+}
+
+.lines-blue > div.points-blue {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+}
+
 .lines-blue > div {
     position: absolute;
     height: 2px;
@@ -165,52 +250,15 @@ body {
     transform-origin: left center;
 }
 
-.line-red::before {
-    content: '';
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    background-color: #FA7373;
-    position: absolute;
-    top: -80%;
-}
-
-.line-red::after {
-    content: '';
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    background-color: #FA7373;
-    position: absolute;
-    top: -80%;
-    right: 0;
-}
-
-.line-blue::before {
-    content: '';
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    background-color: #7BA2FF;
-    position: absolute;
-    top: -80%;
-}
-
-.line-blue::after {
-    content: '';
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    background-color: #7BA2FF;
-    position: absolute;
-    top: -80%;
-    right: 0;
-}
-
 .lines-red > .line1-red {
-    width: 60px;
+    width: 59px;
     bottom: -7px;
     rotate: -40deg;
+}
+
+.point1-red {
+    bottom: -8px;
+    left: 0px;
 }
 
 .lines-red > .line2-red {
@@ -220,24 +268,72 @@ body {
     rotate: 15deg;
 }
 
+.point2-red {
+    top: 5px;
+    left: 41px;
+}
+
 .lines-red > .line3-red {
-    width: 50px;
+    width: 49px;
     top: 18px;
     left: 80px;
     rotate: -18deg;
 }
 
+.point3-red {
+    top: 15px;
+    left: 80px;
+}
+
 .lines-red > .line4-red {
-    width: 46px;
-    top: 3px;
-    left: 119px;
+    width: 53px;
+    top: 2px;
+    left: 122px;
     rotate: 35deg;
+}
+
+.point4-red {
+    top: 2px;
+    left: 121px;
+}
+
+.lines-red > .line5-red {
+    width: 46px;
+    top: 30px;
+    left: 160px;
+    rotate: 20deg;
+}
+
+.point5-red {
+    top: 29px;
+    left: 160px;
+}
+
+.lines-red > .line6-red {
+    width: 53px;
+    top: 47px;
+    left: 198px;
+    rotate: -35deg;
+}
+
+.point6-red {
+    top: 43px;
+    left: 197px;
+}
+
+.point7-red {
+    top: 16px;
+    left: 236px;
 }
 
 .lines-blue > .line1-blue {
     width: 46px;
     top: 50%;
     rotate: -14deg;
+}
+
+.point1-blue {
+    top: 45%;
 }
 
 .lines-blue > .line2-blue {
@@ -247,11 +343,21 @@ body {
     rotate: 20deg;
 }
 
+.point2-blue {
+    top: 6px;
+    left: 39px;
+}
+
 .lines-blue > .line3-blue {
     width: 48px;
     left: 80px;
     top: 23px;
-    rotate: -12deg;
+    rotate: -11deg;
+}
+
+.point3-blue {
+    top: 21px;
+    left: 80px;
 }
 
 .lines-blue > .line4-blue {
@@ -261,6 +367,11 @@ body {
     rotate: 8deg;
 }
 
+.point4-blue {
+    top: 12px;
+    left: 121px;
+}
+
 .lines-blue > .line5-blue {
     width: 45px;
     left: 160px;
@@ -268,11 +379,26 @@ body {
     rotate: 18deg;
 }
 
+.point5-blue {
+    top: 18px;
+    left: 160px;
+}
+
 .lines-blue > .line6-blue {
     width: 45px;
     left: 197px;
     top: 32px;
     rotate: -12deg;
+}
+
+.point6-blue {
+    top: 30px;
+    left: 197px;
+}
+
+.point7-blue {
+    top: 21px;
+    left: 236px;
 }
 
 .days {
