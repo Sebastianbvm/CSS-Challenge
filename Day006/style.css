@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #EDBD6B, #CB7D4E);
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    border-radius: 2px;
+    color: #6d5844;
+}
+
+.profile {
+    height: 300px;
+    width: 325px;
+    background-color: white;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.411);
+}
+
+.right {
+    height: 100%;
+    width: 200px;
+    position: relative;
+}
+
+.left {
+    height: 100%;
+    width: 125px;
+}
+
+.left > div {
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.left > div:hover {
+    background-color: #E1CFC2;
+}
+
+.circle1 {
+    height: 82px;
+    width: 82px;
+    border: 1px solid #786450;
+    border-right: 1px solid transparent;
+    border-radius: 50%;
+    position: relative;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 1.5s ease-in-out;
+    transform-origin: left center;
+    z-index: 5;
+}
+
+.circle1:hover {
+    rotate: 360deg;
+}
+
+.circle2 {
+    height: 76px;
+    width: 76px;
+    border: 1px solid #786450;
+    border-left: 1px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    transform-origin: left center;
+    transform: translateX(-50%);
+    transition: all 1.5s ease-in-out;
+}
+
+.circle2:hover {
+    rotate: -720deg;
+}
+
+img {
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.name-prof {
+    position: relative;
+    text-wrap: nowrap;
+}
+
+.name {
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.prof {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 300;
+    font-size: 11px;
+}
+
+button {
+    height: 30px;
+    width: 120px;
+    border-radius: 15px;
+    border: 1px solid #786450;
+    background-color: white;
+    color: #786450;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+}
+
+button:hover {
+    color: white;
+    background-color: #786450;
+}
+
+.follow {
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.message {
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.posts, .likes, .follower {
+    background-color: #F5E8DF;
+}
+
+.posts {
+    height: 33%;
+    width: 100%;
+    position: relative;
+}
+
+.likes {
+    height: 33%;
+    width: 100%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    position: relative;
+}
+
+.follower {
+    height: 33%;
+    width: 100%;
+    position: relative;
+}
+
+.posts > p:nth-child(1) {
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.posts > p:nth-child(2) {
+    font-size: 11px;
+    font-weight: 300;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.likes > p:nth-child(1) {
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.likes > p:nth-child(2) {
+    font-size: 11px;
+    font-weight: 300;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.follower > p:nth-child(1) {
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.follower > p:nth-child(2) {
+    font-size: 11px;
+    font-weight: 300;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
