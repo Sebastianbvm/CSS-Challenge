@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame {
+    height: 400px;
+    width: 400px;
+    background-color: #264057;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    font-family: 'Open Sans';
+    position: relative;
+    overflow: hidden;
+}
+
+.menu {
+    position: absolute;
+    height: 280px;
+    width: 170px;
+    z-index: 0;
+    background-color: #43627D;
+    border-radius: 3px;
+    left: 80px;
+    transition: all .5s ease-in-out;
+    box-shadow: 5px 5px 8px 0 rgba(0,0,0,0.2);
+}
+
+.menu-open {
+    position: absolute;
+    height: 280px;
+    width: 170px;
+    z-index: 0;
+    background-color: #43627D;
+    border-radius: 3px;
+    left: 50px;
+    transition: all .5s ease-in-out;
+    box-shadow: 5px 5px 8px 0 rgba(0,0,0,0.2);
+}
+
+.menu div {
+    height: 52px;
+    width: 100%;
+    color: #93B2CD;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    transition: all .2s ease-in-out;
+    padding-left: 15px;
+}
+
+.menu-open div {
+    height: 52px;
+    width: 100%;
+    color: #93B2CD;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    transition: all .2s ease-in-out;
+    padding-left: 15px;
+}
+
+.menu div:hover {
+    color: #fff;
+    background-color: #385269;
+}
+
+.menu-open div:hover {
+    color: #fff;
+    background-color: #385269;
+}
+
+.menu p {
+    margin-left: 5px;
+}
+
+.menu-open p {
+    margin-left: 5px;
+}
+
+.dashboard {
+    margin-top: 10px;
+}
+
+.settings {
+    margin-bottom: 10px;
+}
+
+.page {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border-radius: 3px;
+    position: absolute;
+    left: 50px;
+    transition: all .5s ease-in-out;
+    box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+}
+
+.page-open {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border-radius: 3px;
+    position: absolute;
+    left: 195px;
+    transition: all .5s ease-in-out;
+    box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+}
+
+.notifications {
+    height: 241px;
+    width: 100%;
+    position: relative;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    background-color: #5F98CD;
+    border-radius: 3px 3px 0px 0px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    position: relative;
+}
+
+nav > p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.search-icon {
+    color: #B2DAFF;
+    cursor: pointer;
+}
+
+.menu-icon {
+    height: 25px;
+    width: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-icon > div {
+    background-color: #B2DAFF;
+    position: absolute;
+}
+
+.search-icon:hover {
+    color: #fff;
+}
+
+.menu-icon:hover > div {
+    background-color: #fff;
+}
+
+.up-line {
+    height: 3px;
+    width: 19px;
+    border-radius: 2px;
+    top: 4px;
+    left: 0px;
+}
+
+nav .circle {
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    top: 2px;
+    right: 2px;
+}
+
+.bottom-line {
+    height: 3px;
+    width: 27px;
+    border-radius: 2px;
+    bottom: 5px;
+}
+
+nav input {
+    transition: all .4s ease-in-out;
+}
+
+.search {
+    height: 35px;
+    width: 225px;
+    position: absolute;
+    left: 15px;
+    border-radius: 18px;
+    border: none;
+    padding: 0px 17px;
+}
+
+.no-search {
+    height: 35px;
+    width: 225px;
+    position: absolute;
+    left: 45px;
+    border-radius: 18px;
+    border: none;
+    padding: 0px 17px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.line {
+    height: 241px;
+    width: 3px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 30px;
+}
+
+.notification {
+    position: absolute;
+    left: 45px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.55);
+    cursor: pointer;
+}
+
+.john {
+    top: 20px;
+}
+
+.alice {
+    top: 100px;
+}
+
+.luke {
+    bottom: 25px;
+}
+
+.time {
+    font-size: 11px;
+}
+
+.notifications .circle {
+    height: 11px;
+    width: 11px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid #5F98CD;
+    position: absolute;
+    top: 3px;
+    left: -19px;
+    box-shadow: 0px 0px 0px 3px #fff;
+}
+
+.notification:hover {
+    color: #5F98CD;
+}

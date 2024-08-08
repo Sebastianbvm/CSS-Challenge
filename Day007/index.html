@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Day 07</title>
+</head>
+<body>
+    <div class="frame">
+        <div class="menu-open" id="menu">
+            <div class="dashboard">
+                <span class="material-symbols-outlined">
+                    speed
+                </span>
+                <p>Dashboard</p>
+            </div>
+            <div class="profile">
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+                <p>Profile</p>
+            </div>
+            <div class="notifications">
+                <span class="material-symbols-outlined">
+                    notifications
+                </span>
+                <p>Notifications</p>
+            </div>
+            <div class="messages">
+                <span class="material-symbols-outlined">
+                    forum
+                </span>
+                <p>Messages</p>
+            </div>
+            <div class="settings">
+                <span class="material-symbols-outlined">
+                    settings
+                </span>
+                <p>Settings</p>
+            </div>
+        </div>
+        <div class="page-open page-all" id="page">
+            <nav>
+                <div class="menu-icon" onclick="menufunc()">
+                    <div class="up-line"></div>
+                    <div class="circle"></div>
+                    <div class="bottom-line"></div>
+                </div>
+                <p>Notifications</p>
+                <input type="text" placeholder="Search ..." class="no-search" id="search" autocomplete="off">
+                <span class="material-symbols-outlined search-icon" id="search-icon" onclick="search()">
+                search
+                </span>
+            </nav>
+            <div class="notifications">
+                <div class="line"></div>
+                <div class="john notification">
+                    <div class="circle"></div>
+                    <p class="time">9:24 AM</p>
+                    <p><strong>John Walker</strong> posted a photo on your wall.</p>
+                </div>
+                <div class="alice notification">
+                    <div class="circle"></div>
+                    <p class="time">8:19 AM</p>
+                    <p><strong>Alice Parker</strong> commented you last post.</p>
+                </div>
+                <div class="luke notification">
+                    <div class="circle"></div>
+                    <p class="time">Yesterday</p>
+                    <p><strong>Luke Wayne</strong> added you as friend.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
