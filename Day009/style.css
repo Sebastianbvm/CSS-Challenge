@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame {
+    height: 400px;
+    width: 400px;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+.panel-top {
+    height: 310px;
+    width: 100%;
+    background-color: #1A2238;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.349);
+    position: relative;
+    overflow: hidden;
+}
+
+.panel-bottom {
+    height: 90px;
+    width: 100%;
+    position: relative;
+}
+
+.moon {
+    height: 70px;
+    width: 70px;
+    background-color: #F6EDBD;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #F6EDBD;
+    position: absolute;
+    top: 50px;
+    left: 60px;
+}
+
+.crater {
+    position: absolute;
+    background-color: #ECE1A8;
+    border-radius: 50%;
+}
+
+.crater1 {
+    height: 10px;
+    width: 10px;
+    top: 10px;
+    left: 37px;
+}
+
+.crater2 {
+    height: 8px;
+    width: 8px;
+    top: 34px;
+    left: 29px;
+}
+
+.crater3 {
+    height: 11px;
+    width: 11px;
+    top: 21px;
+    left: 10px;
+}
+
+.crater4 {
+    height: 6px;
+    width: 6px;
+    top: 50px;
+    left: 37px;
+}
+
+.crater5 {
+    height: 7px;
+    width: 7px;
+    top: 45px;
+    left: 17px;
+}
+
+.crater6 {
+    height: 8px;
+    width: 8px;
+    top: 26px;
+    left: 48px;
+}
+
+.crater7 {
+    height: 9px;
+    width: 9px;
+    top: 58px;
+    left: 25px;
+}
+
+.crater8 {
+    height: 5px;
+    width: 5px;
+    top: 10px;
+    left: 18px;
+}
+
+.crater9 {
+    height: 7px;
+    width: 7px;
+    top: 20px;
+    left: 28px;
+}
+
+.crater10 {
+    height: 10px;
+    width: 10px;
+    top: 40px;
+    left: 58px;
+}
+
+.mountain-back {
+    height: 100px;
+    width: 100%;
+}
+
+.mountain-back > div {
+    background-color: #26314F;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.mountain-back > .mountain1 {
+    top: 210px;
+    left: -60px;
+}
+
+.mountain-back > .mountain2 {
+    top: 205px;
+    left: 200px;
+}
+
+.mountain-front > div {
+    background-color: #303C5D;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.mountain-front > .mountain1 {
+    bottom: -230px;
+    left: -100px;
+}
+
+.mountain-front > .mountain2 {
+    bottom: -230px;
+    left: -100px;
+}
+
+.mountain-front > .mountain3 {
+    bottom: -230px;
+    left: -100px;
+}
