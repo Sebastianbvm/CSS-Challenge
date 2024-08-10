@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Open Sans';
 }
 
 .frame {
@@ -17,6 +20,8 @@ body {
     width: 400px;
     border-radius: 2px;
     border: 1px solid black;
+    position: relative;
+    overflow: hidden;
 }
 
 .panel-top {
@@ -153,16 +158,175 @@ body {
 }
 
 .mountain-front > .mountain1 {
-    bottom: -230px;
-    left: -100px;
+    bottom: -250px;
+    left: -120px;
 }
 
 .mountain-front > .mountain2 {
-    bottom: -230px;
-    left: -100px;
+    bottom: -220px;
+    left: 80px;
 }
 
 .mountain-front > .mountain3 {
-    bottom: -230px;
-    left: -100px;
+    bottom: -250px;
+    left: 250px;
+}
+
+.degrees {
+    font-size: 45px;
+    font-weight: 100;
+    color: #394568;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.wind {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 25px;
+    left: 100px;
+}
+
+.tue {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 25px;
+    left: 270px;
+}
+
+.tue-degrees {
+    font-size: 15px;
+    color: #394568;
+    position: absolute;
+    top: 25px;
+    left: 315px;  
+}
+
+.humidity {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 45px;
+    left: 100px;
+}
+
+.wed {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 45px;
+    left: 270px;
+}
+
+.wed-degrees {
+    font-size: 15px;
+    color: #394568;
+    position: absolute;
+    top: 45px;
+    left: 315px;  
+}
+
+.bdrop {
+    position: absolute;
+    z-index: 20;
+    left: 18px;
+    bottom: 90px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #7fc1f9;
+    -webkit-animation: drop 0.9s linear 1.08s infinite;
+    animation: drop 0.9s linear 1.08s infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    transform-origin: 50% 100%;
+}
+
+.bdrop::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 6px;
+    height: 6px;
+    background-color: #7fc1f9;
+    border-radius: 3px;
+}
+
+.bdrop::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -5px;
+    left: 2px;
+    height: 10px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: #7fc1f9;
+}
+
+.drop-b1 {
+    left: 200px;
+    animation-delay: .5s;
+}
+
+.drop-b2 {
+    left: 280px;
+    animation-delay: 1.3s;
+}
+
+.drop-b3 {
+    left: 80px;
+    animation-delay: .7s;
+}
+
+.drop-b4 {
+    left: 130px;
+    animation-delay: .9s;
+}
+
+.drop-b5 {
+    left: 170px;
+    animation-delay: 2.1s;
+}
+
+.drop-b6 {
+    left: 360px;
+    animation-delay: 2.1s;
+}
+
+.drop-b7 {
+    left: 260px;
+    animation-delay: 2.3s;
+}
+
+.drop-b8 {
+    left: 50px;
+    animation-delay: 2.3s;
+}
+
+.drop-b9 {
+    left: 290px;
+    animation-delay: 2.7s;
+}
+
+.drop-b10 {
+    left: 10px;
+    animation-delay: 2.9s;
+}
+
+@keyframes drop {
+	0% {
+		transform: translate3d(40px,-320px,0) scaleX(1) scaleY(1) rotate(17deg);
+	}
+	85% {
+		transform: translate3d(0,0,0) scaleX(1) scaleY(1) rotate(17deg);
+	}
+	100% {
+		transform: translate3d(0,0,0) scaleX(3) scaleY(0) rotate(0deg);
+	}
 }
