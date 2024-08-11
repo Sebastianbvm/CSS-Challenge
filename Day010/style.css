@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    background-color: #4C4C4C;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    height: 220px;
+    width: 220px;
+    background-color: #242424;
+    border-radius: 50%;
+    border: 8px solid rgba(76, 76, 76, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans';
+    color: #fff;
+    box-sizing: content-box;
+    position: relative;
+}
+
+.spinner {
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+}
+
+.circle-red {
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #E75757 0% 100%,
+        #242424 0% 0%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spinner 5s linear infinite;
+}
+
+.circle-black {
+    height: 206px;
+    width: 206px;
+    background-color: #242424;
+    border-radius: 50%;
+    display: none;
+}
+
+.circle-pointed {
+    height: 195px;
+    width: 195px;
+    border: 2px dashed white;
+    border-radius: 50%;
+    position: relative;
+}
+
+.day {
+    width: 101px;
+    font-size: 12px;
+    font-weight: 500;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.time {
+    font-size: 40px;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.health {
+    font-size: 12px;
+    position: absolute;
+    top: 67%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+}
+
+span {
+    color: #E75757;
+    animation: heart 1s ease-in-out infinite;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    left: -20%;
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(1);
+    }
+
+    35% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        background: conic-gradient(
+            #E75757 0% 100%,
+            #242424 0% 0%
+        );
+        transition: all 1s ease-in-out;
+    }
+
+    25% {
+        background: conic-gradient(
+            #E75757 0% 25%,
+            #242424 25% 100%
+        );
+        transition: all 1s ease-in-out;
+    }
+
+    50% {
+        background: conic-gradient(
+            #E75757 0% 50%,
+            #242424 50% 100%
+        );
+        transition: all 1s ease-in-out;
+    }
+
+    75% {
+        background: conic-gradient(
+            #E75757 0% 75%,
+            #242424 75% 100%
+        );
+        transition: all 1s ease-in-out;
+    }
+
+    100% {
+        background: conic-gradient(
+            #E75757 0% 100%,
+            #242424 0% 0%
+        );
+        transition: all 1s ease-in-out;
+    }
+}
