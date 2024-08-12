@@ -42,45 +42,33 @@ body {
 
 .spinner {
     position: absolute;
-    width: 210px;
-    height: 210px;
+    width: 211px;
+    height: 211px;
     border-radius: 50%;
     top: 5px;
     left: 5px;
 }
 
 .circle-red {
-    height: 210px;
-    width: 210px;
-    border-radius: 50%;
-    background: conic-gradient(
-        #E75757 0% 100%,
-        #242424 0% 0%
-    );
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: spinner 5s linear infinite;
-}
-
-.circle-black {
-    height: 206px;
-    width: 206px;
-    background-color: #242424;
-    border-radius: 50%;
-    display: none;
+    stroke: #E75757;
+    stroke-width: 3;
+    fill: none;
+    stroke-dasharray: 625;
+    animation: spinner 10s linear infinite ;
+    transform-origin: center center;
+    transform: rotate(-90deg);
 }
 
 .circle-pointed {
     height: 195px;
     width: 195px;
-    border: 2px dashed white;
+    border: 2px dotted white;
     border-radius: 50%;
     position: relative;
 }
 
-.day {
-    width: 101px;
+.date {
+    width: 105px;
     font-size: 12px;
     font-weight: 500;
     position: absolute;
@@ -124,45 +112,21 @@ span {
         transform: scale(1.2);
     }
 }
-
+            
 @keyframes spinner {
-    0% {
-        background: conic-gradient(
-            #E75757 0% 100%,
-            #242424 0% 0%
-        );
-        transition: all 1s ease-in-out;
+    from {
+        stroke-dashoffset: 625;
+        transform: rotate(-90deg) scaleY(1);
     }
-
-    25% {
-        background: conic-gradient(
-            #E75757 0% 25%,
-            #242424 25% 100%
-        );
-        transition: all 1s ease-in-out;
-    }
-
     50% {
-        background: conic-gradient(
-            #E75757 0% 50%,
-            #242424 50% 100%
-        );
-        transition: all 1s ease-in-out;
+        stroke-dashoffset: 0;
+        transform: rotate(-90deg) scaleY(1);
     }
-
-    75% {
-        background: conic-gradient(
-            #E75757 0% 75%,
-            #242424 75% 100%
-        );
-        transition: all 1s ease-in-out;
+    50.001% {
+        transform: rotate(-90deg) scaleY(-1);
     }
-
-    100% {
-        background: conic-gradient(
-            #E75757 0% 100%,
-            #242424 0% 0%
-        );
-        transition: all 1s ease-in-out;
+    to {
+        stroke-dashoffset: 625;
+        transform: rotate(-90deg) scaleY(-1);
     }
 }
